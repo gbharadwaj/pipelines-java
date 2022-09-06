@@ -21,6 +21,6 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-    - task: owaspzap@1
-      inputs:
-        aggressivemode: true
+- task: owaspzap@1
+  inputs:
+    aggressivemode: true
