@@ -24,3 +24,9 @@ steps:
 - task: owaspzap@1
   inputs:
     aggressivemode: true
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'NUnit'
+    testResultsFiles: '**/TEST-*.xml'
+    mergeTestResults: true
