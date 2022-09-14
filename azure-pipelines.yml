@@ -27,4 +27,4 @@ steps:
     testType: 'app'
     severityThreshold: 'medium'
     monitorWhen: 'always'
-    failOnIssues: true
+    failOnIssues: false
