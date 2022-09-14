@@ -21,3 +21,10 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
+- task: SnykSecurityScan@1
+  inputs:
+    serviceConnectionEndpoint: 'snyk test'
+    testType: 'app'
+    severityThreshold: 'medium'
+    monitorWhen: 'always'
+    failOnIssues: true
