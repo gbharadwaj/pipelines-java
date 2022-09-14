@@ -25,6 +25,6 @@ steps:
   inputs:
     serviceConnectionEndpoint: 'snyk test'
     testType: 'app'
-    severityThreshold: 'medium'
+    severityThreshold: 'low'
     monitorWhen: 'always'
     failOnIssues: false
